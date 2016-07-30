@@ -1,2 +1,2 @@
-# learning the features of the git hub as a first step!
-samuel mac dougle!
+# the learning repository 
+  a simple repository to hold the simple code snippets that has amused me.
