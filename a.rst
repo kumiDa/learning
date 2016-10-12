@@ -1,7 +1,7 @@
 ============
 Simple clone
 ============
-
+.. code::bash
     cd /[destination-directory]
     sudo git clone https://[account]@github.com/[account]/machine-learning.git
     cd machine-learning
