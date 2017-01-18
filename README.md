@@ -1,2 +1,2 @@
-# the learning repository 
-  a simple repository to hold the simple code snippets that has amused me.
+# My archive of Code
+  A general purpose repository to hold the codes that I cooked and some that have inspired me.
