@@ -8,7 +8,7 @@ while(cap.isOpened()):
     ret, frame = cap.read()
     if ret==True:
         dict.append(np.mean(frame,axis=0,dtype=int)) #generating mean rgb values for streak generation
-        cv2.imshow('frame',np.array(dict,dtype=int)) #display of the frame buildup
+        cv2.imshow('frame',frame) #display of the frame buildup
         #end the buildup by pressing '`'
         if cv2.waitKey(1) & 0xFF == ord('`'):
             # print np.array(dict) #the rgb MAT generation for debugging
