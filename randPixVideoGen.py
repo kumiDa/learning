@@ -60,6 +60,6 @@ calls={
 }
 argc,argv=sys.argv
 
-calls[argv]()
+calls[int(argv)]()
 
 
