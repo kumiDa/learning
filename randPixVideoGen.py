@@ -1,7 +1,9 @@
 import cv2
 import numpy as np
 import os
+import sys
 
+# method to generate frames of random columns
 def colGen():
     randImg=np.empty((480,848,3))
     rowMat=np.empty((848,3))
@@ -17,6 +19,7 @@ def colGen():
             break
     os.system("rm -rf a.jpg")
 
+# method to generate frames of random rows
 def rowGen():
     randImg=np.empty((480,848,3))
     randVal=np.empty((3))
@@ -33,6 +36,7 @@ def rowGen():
             break
     os.system("rm -rf a.jpg")
 
+# method to generate frames of random pixels
 def pixelGen():
     randImg=np.empty((480,848,3))
     while (cv2.waitKey(1)):
@@ -44,3 +48,18 @@ def pixelGen():
             cv2.destroyAllWindows()
             break
     os.system("rm -rf a.jpg")
+
+# code to call thw required function through commandline arguments
+# 1 - pixel generation
+# 2 - column generation
+# 3 - row generation
+calls={
+    1: pixelGen ,
+    2: colGen ,
+    3: rowGen ,
+}
+argc,argv=sys.argv
+
+calls[argv]()
+
+
