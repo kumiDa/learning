@@ -3,6 +3,8 @@ import numpy as np
 import os
 import sys
 
+####
+
 # method to generate frames of random columns
 def colGen():
     randImg=np.empty((480,848,3))
@@ -61,5 +63,3 @@ calls={
 argc,argv=sys.argv
 
 calls[int(argv)]()
-
-
